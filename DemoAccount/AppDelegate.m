@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ACHomeViewController.h"
 #import <ObjectiveDropboxOfficial/ObjectiveDropboxOfficial.h>
+#import "AllAlbumViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,7 @@
     [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
     [GIDSignIn sharedInstance].delegate = self;
 
-    ACHomeViewController *vc = [[ACHomeViewController alloc] init];
+    AllAlbumViewController *vc = [[AllAlbumViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setRootViewController:vc];
     [self.window makeKeyAndVisible];
